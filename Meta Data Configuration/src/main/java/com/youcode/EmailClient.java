@@ -1,8 +1,15 @@
 package com.youcode;
 
 public class EmailClient {
-    private final SpellChecker spellChecker;
-    public EmailClient (SpellChecker spellChecker) {
+    private SpellChecker spellChecker;
+
+    public EmailClient() {}
+
+    public EmailClient(SpellChecker spellChecker) {
+        this.spellChecker = spellChecker;
+    }
+
+    public void setSpellChecker(SpellChecker spellChecker) {
         this.spellChecker = spellChecker;
     }
 
